@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "esbuild src/app.jsx --outfile=build/index.js --bundle",
-    "lint": "eslint --ext .js --ext .jsx src"
+    "build": "esbuild src/app.jsx --outfile=dist/index.js --bundle",
+    "lint": "eslint --ext .js --ext .jsx src",
+    "dev": "node ./esbuild.config.js"
   },
   "keywords": [],
   "author": "",
@@ -21,6 +22,10 @@
     "eslint-config-airbnb": "^19.0.4",
     "eslint-plugin-import": "^2.25.4",
     "eslint-plugin-jsx-a11y": "^6.5.1",
-    "eslint-plugin-react": "^7.28.0"
+    "eslint-plugin-react": "^7.28.0",
+    "fs-extra": "^10.0.0",
+    "koa": "^2.13.4",
+    "koa-static": "^5.0.0",
+    "livereload": "^0.9.3"
   }
 }
